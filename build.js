@@ -3,7 +3,8 @@ var nw = new NwBuilder({
     files: './**/**', // use the glob format
     platforms: ['osx64'],
     buildDir: './dist/builds',
-    cacheDir: './dist/cache'
+    cacheDir: './dist/cache',
+    macIcns: './resources/icon.icns'
 });
 
 // Build returns a promise
