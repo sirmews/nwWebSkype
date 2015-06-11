@@ -1,14 +1,14 @@
 {
   "name": "webSkype",
   "version": "0.0.1",
-  "main": "https://web.skype.com",
+  "main": "index.html",
   "window": {
     "show": true,
     "toolbar": false,
     "frame": true,
     "position": "center",
-    "width": 350,
-    "height": 700
+    "width": 400,
+    "height": 800
   },
   "dependencies": {
     "node-webkit-builder": "^1.0.12"

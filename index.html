@@ -3,9 +3,30 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
     <title></title>
-    
+    <style type="text/css" media="all">
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            overflow: hidden;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <webview id="webskype" src="https://web.skype.com" autosize="on"></webview>
+    <script type="text/javascript" charset="utf-8">
+        onload = function(){
+        
+            var webview = document.getElementById("webskype");
+            var loadStop = function(){
+                webview.insertCSS({
+                        file: "./styles.css"
+                    });
+            }
+
+            webview.addEventListener("loadcommit", loadStop);
+        }
+    </script>
 </body>
 </html>
