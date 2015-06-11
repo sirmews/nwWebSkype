@@ -1,13 +1,16 @@
 {
-    "name": "webSkype",
-    "version": "0.0.1",
-    "main": "https://web.skype.com",
-    "window": {
-        "show": true,
-        "toolbar": false,
-        "frame": true,
-        "position": "center",
-        "width": 350,
-        "height": 700
-    }
+  "name": "webSkype",
+  "version": "0.0.1",
+  "main": "https://web.skype.com",
+  "window": {
+    "show": true,
+    "toolbar": false,
+    "frame": true,
+    "position": "center",
+    "width": 350,
+    "height": 700
+  },
+  "dependencies": {
+    "node-webkit-builder": "^1.0.12"
+  }
 }
