@@ -1,18 +1,10 @@
 {
   "name": "webSkype",
   "version": "0.0.1",
-  "main": "index.html",
-  "window": {
-    "show": true,
-    "toolbar": true,
-    "frame": true,
-    "position": "center",
-    "width": 400,
-    "height": 800,
-    "title": "nwWebSkype",
-    "resizable": false
-  },
-  "dependencies": {
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-clean": "^0.3.1",
+    "gulp-node-webkit-builder": "^1.1.1"
     "node-webkit-builder": "^1.0.12"
   }
 }
