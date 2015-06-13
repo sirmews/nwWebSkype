@@ -1,7 +1,7 @@
 var NwBuilder = require('node-webkit-builder');
 var nw = new NwBuilder({
     files: './**/**', // use the glob format
-    platforms: ['osx64'],
+    platforms: ['osx', 'win'],
     buildDir: './dist/builds',
     cacheDir: './dist/cache',
     macIcns: './resources/icon.icns'
