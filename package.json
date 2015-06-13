@@ -9,7 +9,8 @@
     "position": "center",
     "width": 400,
     "height": 800,
-    "title": "nwWebSkype"
+    "title": "nwWebSkype",
+    "resizable": false
   },
   "dependencies": {
     "node-webkit-builder": "^1.0.12"
