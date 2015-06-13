@@ -39,6 +39,17 @@
             policy.ignore();
         })
 
+        // re-add mac's built in menu
+        if(process.platform === 'darwin'){
+            var mb = new gui.Menu({
+                        type: 'menubar'
+                    });
+            mb.createMacBuiltin('nwWebSkype', {
+                        hideEdit: false,
+                    });
+            win.menu = mb;
+        }
+
     </script>
 </body>
 </html>
