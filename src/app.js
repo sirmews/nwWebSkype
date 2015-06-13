@@ -17,5 +17,8 @@ if(process.platform === 'darwin'){
 }
 var iframe = document.querySelector('iframe');
 iframe.onload = function(){
-            
+    var style = document.createElement('style');
+    style.setAttribute('type', 'text/css');
+    iframe.contentDocument.head.appendChild(style);
+    style.innerText = "#footer {display: none;}";
 }

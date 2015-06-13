@@ -8,7 +8,7 @@ gulp.task('clean', function(){
 });
 
 gulp.task('build', ['clean'], function(){
-    return gulp.src('./src/**/**')
+    return gulp.src(['./src/**/**'])
         .pipe(builder({
             platforms: ['osx64'],
             buildDir: './dist/builds',
