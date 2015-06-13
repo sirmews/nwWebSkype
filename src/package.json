@@ -11,5 +11,8 @@
     "height": 800,
     "title": "nwWebSkype",
     "resizable": false
+  },
+  "dependencies": {
+    "fs": "0.0.2"
   }
 }

@@ -1,6 +1,5 @@
 var gulp = require('gulp');
 var clean = require('gulp-clean');
-//var nwBuilder = require('node-webkit-builder');
 var builder = require('gulp-node-webkit-builder');
 
 gulp.task('clean', function(){

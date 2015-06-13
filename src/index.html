@@ -15,44 +15,10 @@
             overflow: hidden;
         }
     </style>
+    <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
     <iframe src="https://web.skype.com" scrolling="no" nwdisable nwfaketop></iframe>
-    <script type="text/javascript" charset="utf-8">
-        onload = function(){
-        
-            var webview = document.getElementById("webskype");
-            var loadStop = function(){
-                webview.insertCSS({
-                        file: "./styles.css"
-                    });
-            }
-
-            webview.addEventListener("loadcommit", loadStop);
-            // watch for popups inside webview
-            webview.addEventListener("newwindow", function(e){
-                window.open(e.targetUrl);        
-            })
-        }
-            
-        var gui = require('nw.gui');
-        var win = gui.Window.get();
-        win.on('new-win-policy', function(frame, url, policy){
-            gui.Shell.openExternal(url);
-            policy.ignore();
-        })
-
-        // re-add mac's built in menu
-        if(process.platform === 'darwin'){
-            var mb = new gui.Menu({
-                        type: 'menubar'
-                    });
-            mb.createMacBuiltin('nwWebSkype', {
-                        hideEdit: false,
-                    });
-            win.menu = mb;
-        }
-
-    </script>
+    <script src="app.js"></script>
 </body>
 </html>
