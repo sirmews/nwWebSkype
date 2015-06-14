@@ -13,6 +13,7 @@
     "resizable": false
   },
   "dependencies": {
+    "async": "^1.2.1",
     "fs": "0.0.2"
   }
 }
